@@ -1,6 +1,13 @@
 # fastapi-demo
 This demo uses FastAPI and SQLAlchemy to demo simple CRUD operations. It uses SQLAlchemy ORM for declaring models (table structures) and uses raw SQL queries for the CRUD operations.
 
+This project uses MySQL version 8 as the database and has been containerized using Docker.
+
+## Running the project :rocket:
+```
+docker compose build && docker compose up
+```
+
 ## HTTP REST Methods
 * `POST /users/` - Creates a new user
 * `GET /users/{id}` - Shows details about the user.
